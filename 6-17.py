@@ -235,3 +235,31 @@ Format strings: How do we print a variable in the middle of a string
 "The sum of <num1> and <num2> is equal to <sum>". We can use a technique called f strings. What f strings do
 is allow us to print a variable inline with other string data. 
 """
+
+"""
+Redo the calculator program, but instead of hardcoding the numbers, use input() and f-strings to allow for user input
+and better looking text for output 
+
+sum: addition
+product: multiplication 
+quotient: division
+sum: subtraction
+remainder: modular division 
+
+That should be it for the rest of class today. I'll post two assignments on canvas, 
+
+1) post the link to your modified calculator program on github
+2) The actual homework, which will be some small programs practicing inputs, variables, strings, etc. which will be due
+Wednesday at 11:59 PM I'll try to have this posted by 5 pm today. 
+
+"""
+
+num1 = int(input("Enter num1: "))
+num2 = int(input("Enter num2: "))
+sum = num1 + num2
+print(f"The sum of {num1} and {num2} is {sum}")
+
+name = "Jack Basmaci"
+gradelevel = 12
+email = "Basmacij@Brynmawrschool.org"
+print(f"my name is {name}, my grade level is {gradelevel}, my email is {email}")
