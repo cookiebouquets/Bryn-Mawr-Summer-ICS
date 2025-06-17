@@ -172,3 +172,66 @@ Saving into a variable or assigning into a variable
 "Save the result of adding num1 and num2 into sum" or "assigning sum to num1 + num2" 
 """
 
+""" 
+Right now, we can make variables, do basic arithmetic, and also print strings. That's great, but we can't interact
+with the program in any meaningful way. After we wrote the code, we can't change any of the variables after its ran.
+The only we could change variables is if we rewrote the variables before running them. 
+
+We want to be able to have a back and forth interaction with the computer while its running. The first way we can do this
+is by using the input() function.
+
+input() is a function that takes in a string as the object which will become the prompt. Then, python will give control
+of the program to the user and wait for keyboard input into the terminal, and then assign the result of the input into 
+a variable.
+
+print(<object>) prints <object>
+
+input(<object>) prints <object> then waits for keyboard input
+
+what <object> ends up becoming your prompt to the user.
+"""
+#print("demo'ing input")
+#name = input("What is your name? ")
+#print(name)
+
+"""
+Now that we can take in input and manipulate it, let's try doing some math
+"""
+print("input and math")
+num1 = int(input("type in num 1: "))
+#Functions in python evaluate inside first. input() goes first, then int()
+num2 = int(input("type in num 2: "))
+sum = num1 + num2
+print(f"The sum of {num1} and {num2} is {sum}")
+
+"""
+What the heck, I typed in 20 and 10, and expected 30 as the sum, but instead, I got 2010. Input() specifically saves
+strings.
+
+print(10 + 5) and print("10 + 5")
+ 15                 10 + 5
+
+ num1 "20" but the data type is a string
+ num2 "10"  but the data type is a string
+
+ addition for strings, ends becoming concatenation, which means we add the string to the end of the other. 
+
+ "20" + "10" = "2010" 
+
+ We can fix this very easily with a technique called typecasting. What typecasting does is takes in a datatype and converts
+ it into another as long as the data is valid in both data types.
+
+ "20" and 20
+ "20" -> 20
+
+ 20 -> "20"   
+
+ converting strings into numbers; int()     
+"""
+
+"""
+Format strings: How do we print a variable in the middle of a string
+
+"The sum of <num1> and <num2> is equal to <sum>". We can use a technique called f strings. What f strings do
+is allow us to print a variable inline with other string data. 
+"""
