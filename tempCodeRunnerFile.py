@@ -1,1 +1,2 @@
-print(5 + 10)
+
+print("welcome to our calculator:")
