@@ -1,6 +1,6 @@
 board = [
-    ["X",".","."],
-    [".","X","."],
+    [".",".","X"],
+    [".",".","X"],
     [".",".","X"],
 ]
 
@@ -50,6 +50,9 @@ for i in range(len(board)): #This is going to pull all indices from [0,1,2]
 
 #Left Diagonal Victory 
 """ 
+
+board[row][columns]
+
   [0][0]
     X 0 0
     0 X 0 What is the middle index? [1][1]
@@ -68,6 +71,8 @@ if board[0][0] == board[1][1] == board[2][2] == current_player:
 TODO: 
 Figure out what the if-statement has to be for a right diagonal victory and check to see if it works 
 """
+if board[0][2] == board[1][1] == board[2][0] == current_player:
+    print(f"{current_player} wins with a right diagonal victory!")
 
 
 #Column Victories 
@@ -80,3 +85,6 @@ Figure out what the if-statement has to be for a right diagonal victory and chec
 TODO: 
 So we still need a for loop, can you adapt the way we won with a row victory to a column victory? 
 """
+for i in range(len(board[0])):
+    if board[0][i] == board[1][i] == board[2][i] == current_player:
+        print(f"{current_player} wins with a column victory!")
