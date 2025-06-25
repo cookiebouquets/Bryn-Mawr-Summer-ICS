@@ -409,3 +409,16 @@ for row in board:
     for number in row:
         print(number, end = "|")
     print()
+
+""" 
+Now I get to something that looks suspiciously like a tic-tac-toe board.
+
+When we come back: The example I'm going to do is checking for a winner on a tic-tac-toe board
+
+10:20 
+"""
+
+
+""" 
+
+"""

@@ -174,4 +174,6 @@ example(15)
 
 """ 
 When I say return ends control of a function. It REALLY ends control of the function.
+
+When you declare a parameter inside your function header. They become REQUIRED. 
 """
