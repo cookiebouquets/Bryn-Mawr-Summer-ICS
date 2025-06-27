@@ -346,3 +346,60 @@ strcopy = ""
 for char in str1:
     strcopy = strcopy + char
     print(strcopy)
+
+
+"""
+Our lab is to check whether or not a word being inputted is a palindrome. 
+
+A palindrome is a word that's spelled the same way backwards
+
+noon is a palindrome
+racecar is a palindrome
+Extra Credit: taco cat is a palindrome 
+
+moon is not a palindrome
+computer science is not a palindrome 
+
+Using for-each loops, check to see if a word the USER types in is a palindrome
+
+
+"""
+#word = input()
+#copy_backwards = ""
+#for loop here
+
+#if word == copy: 
+    #print(f"{word} is a palindrome")
+
+
+str = ""
+sentence = "This is a sentence".split()
+newstr = "".join(sentence)
+print(newstr)
+
+
+word = "taco cat".split()
+word = "".join(word)
+print(word)
+
+
+"""
+last class i said .join() is useless. How it's actually useful is specifically this case. 
+
+.split() = takes in a string and creates a list of strings where each element is split at the whitespace
+
+sub.join(<str>) = takes in a list and creates a new string where each element of the list is joined together by the string 
+in the subject
+
+
+str = this is a sentence 
+
+this sub is sub a sub sentence
+
+" " 
+this is a sentence
+#
+this#is#a#sentence
+""
+thisisasentence
+"""
